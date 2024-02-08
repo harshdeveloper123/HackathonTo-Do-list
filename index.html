@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- create a box that shown the title of the to do list -->
+        <div class="titleBox">
+              TO-DO-LIST <br>Get organized, get productive.
+              <div class="typeTask"><input type="text" id="taskInput">
+                <!-- function call for when user click on add task button  -->
+                 <button onclick="addTask()"  class="addTask" >Add Task</button></div>
+                 <!-- function call when the user click on delete all button. -->
+                 <div><button class="deleteAll" onclick="confirmDeleteAll()">Delete all</button></div>
+        </div>
+        <div class="addTaskBox">Add a task
+            <ul id="taskList"></ul> </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>

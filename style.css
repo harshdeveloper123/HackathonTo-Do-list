@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: cornflowerblue;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    
+}
+/* styles applied to the title box named as class in which the title of project is shown */
+.titleBox{
+    height: auto;
+    width: 60vw;
+    border: 2px solid black;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%; ;
+    animation: color-change 15s infinite;
+    font-size: 2.5vw;
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    border-radius: 20vw;
+}
+/* animation applied to the title box which changes the background color of the box  */
+@keyframes color-change{
+      0%{
+        background-color: #6696e3;
+      }
+      20%{
+        background-color: #e58feb;
+      }
+      45%{
+        background-color:#b57d5e ;
+      }
+      60%{
+        background-color: #a4c253;
+      }
+      80%{
+        background-color:#d62d49 ;
+      }
+      100%{
+        background-color: #c7c27b;
+      }
+}
+#taskInput{
+    height: 4vh;
+    width: 40vw;
+    border-radius: 20vw;
+    
+}
+/* styles applied to the add task button  */
+.addTask{
+    height: 8%;
+    width: 13%;
+    border: 2px solid #453433;
+    border-radius: 5vw;
+    font-size: 1.5vw;
+    background-color: aqua;
+}
+.addTask:hover{
+  background-color: blueviolet;
+  color: white;
+  
+}
+/* styles applied to add task box in which all task are shown  */
+.addTaskBox{
+    height: auto;
+    width: 60vw;
+    border: 2px solid red;
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+    border-radius: 2vw;
+    padding: 20px;
+    font-size: 2vw;
+    
+}
+.deleteAll{
+  font-size: 1.5vw;
+  border-radius: 20vw;
+  background-color: blueviolet;
+}
+.deleteAll:hover{
+  background-color: #a4c253;
+  color: azure;
+}
+/* styles applied to task list in which a list tag is created in js file so selector is used  */
+#taskList li{
+   height: auto;
+  margin-top: 10px;
+  border-radius: 2vw;
+  animation: taskListBorder 10s infinite;
+  padding: 8px;
+  overflow: auto;
+
+ 
+}
+/* animation applied to the task list in which the border color changes  */
+@keyframes taskListBorder{
+  0%{
+    border: 2px solid red
+  }
+  30%{
+    border: 2px solid rgb(236, 19, 30)
+  }
+  60%{
+    border: 2px solid pink
+  }
+  80%{
+    border:2px solid #a4c253;
+  }
+  100%{
+    border: 2px solid yellow;
+  }
+}
+#taskList span{
+  float: left;
+  font-size: 1.5vw;
+  
+}
+#taskList button{
+  float: right;
+  margin-right: 1vw;
+  height: auto;
+  font-size: 1.5vw;
+  background-color: #e58feb;
+  border-radius: 20vw;
+ 
+}
+#taskList button:hover{
+  background-color: brown;
+  color: white;
+}
